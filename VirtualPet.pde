@@ -1,15 +1,37 @@
 
 void setup(){
   //some of your code here
-background(197, 233, 252);
+background(91, 170, 245);
 }
 void draw(){
   //more of your code here
-// branch
+ // branch
     fill(89, 56, 31);
-    // branch
-    fill(89, 56, 31);
-    rect(0, 350, 390, 10);
+    rect(0, 350, 390, 40);
+    triangle(0, 210, 150, 355, 0, 355);
+     //sky
+    fill(91, 170, 245);
+    ellipse(150, 190, 298, 318);
+    //cloud
+    fill(255);
+    ellipse(45, 75, 100, 30);
+    ellipse(120, 75, 100, 30);
+    ellipse(78, 55, 100, 30);
+    ellipse(250, 105, 100, 30);
+    ellipse(320, 105, 100, 30);
+    ellipse(285, 85, 100, 30);
+    //leaf 340, 335
+    fill(2, 207, 97);
+    pushMatrix(); 
+    translate(340, 340); 
+    rotate(109);
+    ellipse(0, 0, 30, 50);
+    popMatrix(); 
+    pushMatrix(); 
+    translate(355, 340); 
+    rotate(70);
+    ellipse(0, 0, 30, 50);
+    popMatrix(); 
     // purple part - wings
     fill(204, 52, 235);
     ellipse(200, 275, 165, 150);
@@ -38,7 +60,7 @@ void draw(){
     ellipse(175, 175, 50, 40); //left
     ellipse(225, 175, 50, 40); //right
     //eyes 
-    fill(242, 36, 153);
+     fill(242, 36, 153);
     ellipse(175, 175, 30, 30); //left
     ellipse(225, 175, 30, 30); //right
     //pupils
@@ -93,5 +115,14 @@ void draw(){
     rotate(109);
     arc(0, 0, 20, 20, PI+QUARTER_PI, TWO_PI);
     popMatrix(); 
-}
+    //bow
+    
 
+    //Mouse coordinate finder. Use this code to help place your shapes. 
+
+    fill(0); //mouse coordinate finder
+    text("("+mouseX+","+mouseY+")", mouseX, mouseY);
+
+    
+  }
+}
