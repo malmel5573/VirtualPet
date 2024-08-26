@@ -1,9 +1,10 @@
 
 void setup(){
   //some of your code here
-background(91, 170, 245);
+ size(400, 400);
 }
 void draw(){
+background(91, 170, 245);
   //more of your code here
  // branch
     fill(89, 56, 31);
