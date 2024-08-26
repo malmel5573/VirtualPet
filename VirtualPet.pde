@@ -121,8 +121,8 @@ background(91, 170, 245);
 
     //Mouse coordinate finder. Use this code to help place your shapes. 
 
-    fill(0); //mouse coordinate finder
-    text("("+mouseX+","+mouseY+")", mouseX, mouseY);
+   // fill(0); //mouse coordinate finder
+  // text("("+mouseX+","+mouseY+")", mouseX, mouseY);
 
     
   }
